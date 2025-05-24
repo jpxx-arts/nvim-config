@@ -25,8 +25,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- terminal
---vim.keymap.set("n", "<leader>th", ":split | terminal<CR>", { desc = "Terminal horizontal" })
-vim.keymap.set("n", "<leader>tv", ":botup split | horizontal resize 20 | terminal<CR>", { desc = "Terminal horizontal" })
+vim.keymap.set("n", "<leader>th", ":split | terminal<CR>", { desc = "Terminal horizontal" })
 vim.keymap.set("n", "<leader>tv", ":botright vsplit | vertical resize 40 | terminal<CR>", { desc = "Terminal vertical" })
 
 -- treesitter
