@@ -33,7 +33,6 @@ vim.keymap.set({ "n", "t" }, '<C-j>', [[<C-\><C-n><C-w>j]], { noremap = true, si
 vim.keymap.set({ "n", "t" }, '<C-k>', [[<C-\><C-n><C-w>k]], { noremap = true, silent = true })
 vim.keymap.set({ "n", "t" }, '<C-l>', [[<C-\><C-n><C-w>l]], { noremap = true, silent = true })
 
--- treesitter
 vim.keymap.set("n", "<leader>er", vim.diagnostic.open_float, { desc = "Mostra erro na linha" })
 
 -- nvim tree
