@@ -27,6 +27,11 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- terminal
 vim.keymap.set("n", "<leader>th", ":split | terminal<CR>", { desc = "Terminal horizontal" })
 vim.keymap.set("n", "<leader>tv", ":botright vsplit | vertical resize 40 | terminal<CR>", { desc = "Terminal vertical" })
+-- mover entre "janela"
+vim.keymap.set({ "n", "t" }, '<C-h>', [[<C-\><C-n><C-w>h]], { noremap = true, silent = true })
+vim.keymap.set({ "n", "t" }, '<C-j>', [[<C-\><C-n><C-w>j]], { noremap = true, silent = true })
+vim.keymap.set({ "n", "t" }, '<C-k>', [[<C-\><C-n><C-w>k]], { noremap = true, silent = true })
+vim.keymap.set({ "n", "t" }, '<C-l>', [[<C-\><C-n><C-w>l]], { noremap = true, silent = true })
 
 -- treesitter
 vim.keymap.set("n", "<leader>er", vim.diagnostic.open_float, { desc = "Mostra erro na linha" })
