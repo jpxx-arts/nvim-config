@@ -71,4 +71,8 @@ return require('packer').startup(function(use)
 
   use 'andymass/vim-matchup'
 
+  use 'mfussenegger/nvim-jdtls' -- plugin com todas as features do jdtls
+  use 'mfussenegger/nvim-dap'
+  use 'onsails/lspkind.nvim'
+
 end)
