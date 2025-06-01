@@ -5,8 +5,8 @@ vim.keymap.set("n", "<leader>q", function() vim.cmd("q!") end, { noremap = true,
 -- Shortcuts
 vim.keymap.set('i', 'jk', '<Esc>', { noremap = true, silent = true })
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc="Mover múltiplas linhas" })
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc="Mover múltiplas linhas" })
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { noremap = true, silent = true, desc = "Mover linha para baixo" })
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true, desc = "Mover linha para cima" })
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
