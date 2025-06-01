@@ -75,4 +75,6 @@ return require('packer').startup(function(use)
   use 'mfussenegger/nvim-dap'
   use 'onsails/lspkind.nvim'
 
+  use 'github/copilot.vim'
+
 end)
