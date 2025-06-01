@@ -37,3 +37,24 @@ vim.keymap.set("n", "<leader>er", vim.diagnostic.open_float, { desc = "Mostra er
 
 -- nvim tree
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+
+-- Função para alternar o estado do Copilot.vim
+local function toggle_copilot_plugin()
+    if vim.g.copilot_enabled == nil then
+        vim.g.copilot_enabled = true
+    end
+
+    if vim.g.copilot_enabled then
+        vim.cmd('Copilot disable')
+        print("Copilot (plugin) desativado.")
+        vim.g.copilot_enabled = false
+    else
+        vim.cmd('Copilot enable')
+        print("Copilot (plugin) ativado.")
+        vim.g.copilot_enabled = true
+    end
+end
+
+-- Mapear a tecla F8 (exemplo) para alternar o Copilot
+vim.keymap.set('n', '<F8>', toggle_copilot_plugin, { noremap = true, silent = true, desc = "Toggle Copilot (plugin)" })
+
